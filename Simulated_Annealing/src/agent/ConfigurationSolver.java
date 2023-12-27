@@ -33,9 +33,7 @@ public class ConfigurationSolver {
 			this.configuration[i] = i;
 		}
 		// Need to clone because of how Java handles assigning arrays
-		// as values (relative referencing). Recall this is similar to
-		// that one lecture in CSC 116 where if we don't duplicate the second
-		// array, it will constantly change as this.configuration changes.
+		// as values (relative referencing).
 		// Cloning the array resolves this issue.
 		this.bestConfiguration = this.configuration.clone();
 		this.temp = 100;
